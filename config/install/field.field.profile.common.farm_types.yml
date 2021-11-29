@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.farm_types
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - options
+id: profile.common.farm_types
+field_name: farm_types
+entity_type: profile
+bundle: common
+label: 'Farm Type'
+description: 'What type of farm operation is this?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

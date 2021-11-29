@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - farm_profile
+    - options
+id: profile.product_categories
+field_name: product_categories
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: agroforestry
+      label: Agroforestry
+    -
+      value: berries
+      label: Berries
+    -
+      value: grains_other
+      label: Grains
+    -
+      value: native_habitat
+      label: 'Native Habitat'
+    -
+      value: orchard_vine
+      label: 'Orchard or Vine'
+    -
+      value: pasture
+      label: Pasture
+    -
+      value: vegetables
+      label: Vegetables
+    -
+      value: rangeland
+      label: Rangeland
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

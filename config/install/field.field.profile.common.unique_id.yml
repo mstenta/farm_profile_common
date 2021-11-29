@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.unique_id
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.unique_id
+field_name: unique_id
+entity_type: profile
+bundle: common
+label: 'Unique Id'
+description: 'At least a UUID for the farm, not displayed.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

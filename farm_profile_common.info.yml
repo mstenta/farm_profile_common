@@ -4,4 +4,8 @@ description: 'Provides a farmOS profile type for common farm information.'
 package: farmOS Contrib
 core_version_requirement: ^9
 dependencies:
+  - address:address
+  - drupal:options
+  - drupal:text
   - farm_profile:farm_profile
+  - json_field:json_field

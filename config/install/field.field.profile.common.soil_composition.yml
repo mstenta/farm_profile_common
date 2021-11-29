@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.soil_composition
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - json_field
+id: profile.common.soil_composition
+field_name: soil_composition
+entity_type: profile
+bundle: common
+label: 'Soil Composition'
+description: "Using the soil triangle linked, define the average soil make up of your farm.\r\n\r\nKeys: silt, clay and sand\r\nValues: integers that add up to 100%\r\n\r\nhttps://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/survey/?cid=nrcs142p2_054167"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: json_native_binary

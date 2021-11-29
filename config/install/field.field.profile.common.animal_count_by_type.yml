@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.animal_count_by_type
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - json_field
+id: profile.common.animal_count_by_type
+field_name: animal_count_by_type
+entity_type: profile
+bundle: common
+label: 'Animal Count By Type'
+description: "Based on the values in animal types, what are the actual headcount totals for the different animals you have?\r\n\r\nkeys: animal species\r\nvalue: number count"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: json_native_binary

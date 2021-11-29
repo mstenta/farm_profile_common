@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - farm_profile
+    - options
+id: profile.collaboration_interest
+field_name: collaboration_interest
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: research
+      label: Research
+    -
+      value: events
+      label: 'Cohosting events'
+    -
+      value: volunteering
+      label: 'Volunteer opportunities'
+    -
+      value: mentorship
+      label: 'Offering mentorship and advice'
+    -
+      value: cooperative
+      label: 'Cooperative and supply-chain development'
+    -
+      value: buy
+      label: 'Buy our outputs'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

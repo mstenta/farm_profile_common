@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.average_annual_rainfall
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.average_annual_rainfall
+field_name: average_annual_rainfall
+entity_type: profile
+bundle: common
+label: 'Average Annual Rainfall'
+description: "What is the average annual rainfall for your operation?\r\n\r\nStored in millimeters"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

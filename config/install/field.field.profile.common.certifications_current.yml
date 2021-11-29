@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.certifications_current
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - options
+id: profile.common.certifications_current
+field_name: certifications_current
+entity_type: profile
+bundle: common
+label: 'Current Certifications'
+description: 'Which certifications does the farm currently hold?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.hardiness_zone
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - options
+id: profile.common.hardiness_zone
+field_name: hardiness_zone
+entity_type: profile
+bundle: common
+label: 'Hardiness Zone'
+description: 'USDA Hardiness Zone'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

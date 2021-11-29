@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.products_value_added
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.products_value_added
+field_name: products_value_added
+entity_type: profile
+bundle: common
+label: 'Products, Value Added'
+description: 'What value added products do you provide? Examples: Making yarn from wool; making cheese from milk; making bailed hay from hay-grass; processing cuts of meat'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

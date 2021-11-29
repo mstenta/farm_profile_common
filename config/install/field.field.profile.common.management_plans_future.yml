@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.management_plans_future
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - options
+id: profile.common.management_plans_future
+field_name: management_plans_future
+entity_type: profile
+bundle: common
+label: 'Future Management Plans'
+description: 'What plans, strategies and overall techniques do you desire to manage your land in the future?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

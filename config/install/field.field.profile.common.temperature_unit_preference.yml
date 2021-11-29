@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.temperature_unit_preference
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - options
+id: profile.common.temperature_unit_preference
+field_name: temperature_unit_preference
+entity_type: profile
+bundle: common
+label: 'Temperature Unit Preference'
+description: 'Which unit of temperature do you prefer'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

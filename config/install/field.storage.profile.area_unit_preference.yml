@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - farm_profile
+    - options
+id: profile.area_unit_preference
+field_name: area_unit_preference
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: acres
+      label: Acres
+    -
+      value: hectares
+      label: Hectares
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

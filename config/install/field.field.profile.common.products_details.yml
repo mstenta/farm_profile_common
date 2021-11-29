@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.products_details
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - options
+id: profile.common.products_details
+field_name: products_details
+entity_type: profile
+bundle: common
+label: 'Products Details'
+description: 'What products, such as crops or livestock, are you a primary producer for?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

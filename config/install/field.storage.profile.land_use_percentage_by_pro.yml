@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - farm_profile
+    - json_field
+id: profile.land_use_percentage_by_pro
+field_name: land_use_percentage_by_pro
+entity_type: profile
+type: json_native_binary
+settings: {  }
+module: json_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

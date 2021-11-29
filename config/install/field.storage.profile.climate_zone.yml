@@ -1,0 +1,116 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - farm_profile
+    - options
+id: profile.climate_zone
+field_name: climate_zone
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Af
+      label: 'Tropical - Rainforest'
+    -
+      value: Am
+      label: 'Tropical - Monsoon'
+    -
+      value: Aw
+      label: 'Tropical - Savanna, Dry winter'
+    -
+      value: As
+      label: 'Tropical - Savanna, Dry summer'
+    -
+      value: BWh
+      label: 'Arid - Desert, Hot'
+    -
+      value: BWk
+      label: 'Arid - Desert, Cold'
+    -
+      value: BSh
+      label: 'Arid - Steppe, Hot'
+    -
+      value: BSk
+      label: 'Arid - Steppe, Cold'
+    -
+      value: Csa
+      label: 'Temperate - Hot Dry Summer'
+    -
+      value: Csb
+      label: 'Temperate - Warm Dry Summer'
+    -
+      value: Csc
+      label: 'Temperate - Cold Dry Summer'
+    -
+      value: Cwa
+      label: 'Temperate - Dry Winter, Hot Summer'
+    -
+      value: Cwb
+      label: 'Temperate - Dry Winter, Warm Summer'
+    -
+      value: Cwc
+      label: 'Temperate - Dry Winter, Cool Summer'
+    -
+      value: Cfa
+      label: 'Temperate - Hot Summer, No Dry Season'
+    -
+      value: Cfb
+      label: 'Temperate - Warm Summer, No Dry Season'
+    -
+      value: Cfc
+      label: 'Temperate - Cool Summer, No Dry Season'
+    -
+      value: Dsa
+      label: 'Continental - Hot Dry Summer'
+    -
+      value: Dsb
+      label: 'Continental - Warm Dry Summer'
+    -
+      value: Dsc
+      label: 'Continental - Cold Dry Summer'
+    -
+      value: Dsd
+      label: 'Continental - Dry Summer, Very Cold Winter'
+    -
+      value: Dwa
+      label: 'Continental - Dry Winter, Hot Summer'
+    -
+      value: Dwb
+      label: 'Continental - Dry Winter, Warm Summer'
+    -
+      value: Dwc
+      label: 'Continental - Dry Winter, Cool Summer'
+    -
+      value: Dwd
+      label: 'Continental - Dry, Very Cold Winter'
+    -
+      value: Dfa
+      label: 'Continental - Hot Summer, No Dry Season'
+    -
+      value: Dfb
+      label: 'Continental - Warm Summer, No Dry Season'
+    -
+      value: Dfc
+      label: 'Continental - Cool Summer, No Dry Season'
+    -
+      value: Dfd
+      label: 'Continental - Very Cold Winter, No Dry Season'
+    -
+      value: ET
+      label: Tundra
+    -
+      value: EF
+      label: 'Eternal frost (ice cap)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

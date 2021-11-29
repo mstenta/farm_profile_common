@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.renting
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.renting
+field_name: renting
+entity_type: profile
+bundle: common
+label: Renting
+description: 'Do you rent any land for your operation?'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

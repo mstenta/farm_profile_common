@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.indigenous_territory
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - options
+id: profile.common.indigenous_territory
+field_name: indigenous_territory
+entity_type: profile
+bundle: common
+label: 'Indigenous Territory'
+description: 'Indigenous communities that have a relationship to the land'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

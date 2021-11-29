@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.product_categories
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - options
+id: profile.common.product_categories
+field_name: product_categories
+entity_type: profile
+bundle: common
+label: 'Product Categories'
+description: 'What are the broad categories of products produced on your farm?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

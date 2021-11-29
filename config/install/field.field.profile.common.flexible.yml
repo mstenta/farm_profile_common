@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.flexible
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - json_field
+id: profile.common.flexible
+field_name: flexible
+entity_type: profile
+bundle: common
+label: Flexible
+description: 'A  JSON structure for any other data that needs to be passed'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: json_native_binary

@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.average_annual_temperature
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.average_annual_temperature
+field_name: average_annual_temperature
+entity_type: profile
+bundle: common
+label: 'Average Annual Temperature'
+description: 'What is the average annual temperature for your operation? (Stored in celsius)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.climate_zone
+  enforced:
+    module:
+      - farm_profile_common
+  module:
+    - options
+id: profile.common.climate_zone
+field_name: climate_zone
+entity_type: profile
+bundle: common
+label: 'Climate Zone'
+description: "Koppen climate zones. These will be used to help connect farmers to others operating in similar climate zones.\r\n\r\nhttps://en.wikipedia.org/wiki/K%C3%B6ppen_climate_classification"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

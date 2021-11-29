@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.rent_acreage_percentage
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.rent_acreage_percentage
+field_name: rent_acreage_percentage
+entity_type: profile
+bundle: common
+label: 'Rent Area % of Total'
+description: 'What portion of your farming area do you rent?'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

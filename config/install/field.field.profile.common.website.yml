@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.website
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.website
+field_name: website
+entity_type: profile
+bundle: common
+label: Website
+description: 'Website or link for the farm'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
