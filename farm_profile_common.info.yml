@@ -1,0 +1,7 @@
+name: 'farmOS Profile: Common'
+type: module
+description: 'Provides a farmOS profile type for common farm information.'
+package: farmOS Contrib
+core_version_requirement: ^9
+dependencies:
+  - farm_profile:farm_profile
