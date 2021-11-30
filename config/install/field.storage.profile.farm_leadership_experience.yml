@@ -6,15 +6,14 @@ dependencies:
       - farm_profile_common
   module:
     - farm_profile
-    - options
-id: profile.farming_experience_years
-field_name: farming_experience_years
+id: profile.farm_leadership_experience
+field_name: farm_leadership_experience
 entity_type: profile
-type: list_integer
+type: integer
 settings:
-  allowed_values: {  }
-  allowed_values_function: ''
-module: options
+  unsigned: false
+  size: normal
+module: core
 locked: false
 cardinality: 1
 translatable: true

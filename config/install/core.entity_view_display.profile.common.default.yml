@@ -18,10 +18,10 @@ dependencies:
     - field.field.profile.common.equity_practices
     - field.field.profile.common.farm_cell_phone
     - field.field.profile.common.farm_email
+    - field.field.profile.common.farm_leadership_experience
     - field.field.profile.common.farm_outline
     - field.field.profile.common.farm_physical_address
     - field.field.profile.common.farm_types
-    - field.field.profile.common.farming_experience_years
     - field.field.profile.common.farmos_url
     - field.field.profile.common.flexible
     - field.field.profile.common.goals
@@ -61,16 +61,6 @@ targetEntityType: profile
 bundle: common
 mode: default
 content:
-  created:
-    label: above
-    type: timestamp
-    weight: 20
-    region: content
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
   acres:
     weight: 63
     label: above
@@ -133,18 +123,20 @@ content:
     type: number_decimal
     region: content
   certifications_current:
-    weight: 25
+    weight: 74
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: list_default
+    type: string
     region: content
   certifications_desired:
-    weight: 26
+    weight: 75
     label: above
-    settings: { }
-    third_party_settings: { }
-    type: list_default
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   climate_zone:
     weight: 61
@@ -168,12 +160,23 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  equity_practices:
-    weight: 66
+  created:
     label: above
-    settings: {  }
+    type: timestamp
+    weight: 20
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
     third_party_settings: {  }
-    type: list_default
+  equity_practices:
+    weight: 76
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   farm_cell_phone:
     weight: 58
@@ -188,8 +191,17 @@ content:
     label: above
     settings:
       link_to_entity: false
-    third_party_settings: { }
+    third_party_settings: {  }
     type: string
+    region: content
+  farm_leadership_experience:
+    weight: 73
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
     region: content
   farm_outline:
     weight: 51
@@ -209,13 +221,6 @@ content:
     region: content
   farm_types:
     weight: 40
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  farming_experience_years:
-    weight: 43
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -251,11 +256,12 @@ content:
     type: list_default
     region: content
   indigenous_territory:
-    weight: 64
+    weight: 77
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: list_default
+    type: string
     region: content
   land_use_percentage_by_pro:
     weight: 44
@@ -322,18 +328,20 @@ content:
     type: list_default
     region: content
   products_details:
-    weight: 36
+    weight: 79
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: list_default
+    type: string
     region: content
   products_value_added:
-    weight: 39
+    weight: 78
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: list_default
+    type: string
     region: content
   rain_unit_preference:
     weight: 72
@@ -376,6 +384,16 @@ content:
     third_party_settings: {  }
     type: json
     region: content
+  status:
+    type: boolean
+    label: above
+    weight: 0
+    settings:
+      format: enabled-disabled
+      format_custom_false: ''
+      format_custom_true: ''
+    region: content
+    third_party_settings: {  }
   temperature_unit_preference:
     weight: 70
     label: above
@@ -383,6 +401,21 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  uid:
+    label: above
+    type: author
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   unique_id:
     weight: 48
     label: above
@@ -399,29 +432,4 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  status:
-    type: boolean
-    label: above
-    weight: 0
-    settings:
-      format: enabled-disabled
-      format_custom_false: ''
-      format_custom_true: ''
-    region: content
-    third_party_settings: {  }
-  title:
-    label: hidden
-    type: string
-    weight: -5
-    region: content
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  uid:
-    label: above
-    type: author
-    weight: 15
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden: {  }

@@ -3,21 +3,23 @@ status: true
 dependencies:
   config:
     - farm_profile.profile_type.common
-    - field.storage.profile.farming_experience_years
+    - field.storage.profile.farm_leadership_experience
   enforced:
     module:
       - farm_profile_common
-  module:
-    - options
-id: profile.common.farming_experience_years
-field_name: farming_experience_years
+id: profile.common.farm_leadership_experience
+field_name: farm_leadership_experience
 entity_type: profile
 bundle: common
 label: 'Experience of Farm Leadership'
-description: 'How much experience does the farm leadership have?'
+description: 'How much experience does the farm leadership have in years?'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: list_integer
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

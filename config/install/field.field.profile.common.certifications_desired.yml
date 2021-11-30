@@ -7,8 +7,6 @@ dependencies:
   enforced:
     module:
       - farm_profile_common
-  module:
-    - options
 id: profile.common.certifications_desired
 field_name: certifications_desired
 entity_type: profile
@@ -20,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: string

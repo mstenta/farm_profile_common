@@ -6,15 +6,15 @@ dependencies:
       - farm_profile_common
   module:
     - farm_profile
-    - options
 id: profile.products_details
 field_name: products_details
 entity_type: profile
-type: list_string
+type: string
 settings:
-  allowed_values: {  }
-  allowed_values_function: ''
-module: options
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: -1
 translatable: true
