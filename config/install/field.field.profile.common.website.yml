@@ -11,7 +11,7 @@ id: profile.common.website
 field_name: website
 entity_type: profile
 bundle: common
-label: Website
+label: 'Farm Website'
 description: 'Website or link for the farm'
 required: false
 translatable: false
