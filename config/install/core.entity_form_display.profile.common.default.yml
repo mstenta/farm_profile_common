@@ -19,6 +19,7 @@ dependencies:
     - field.field.profile.common.farm_cell_phone
     - field.field.profile.common.farm_email
     - field.field.profile.common.farm_leadership_experience
+    - field.field.profile.common.farm_management_system
     - field.field.profile.common.farm_outline
     - field.field.profile.common.farm_physical_address
     - field.field.profile.common.farm_types
@@ -31,6 +32,7 @@ dependencies:
     - field.field.profile.common.mailing_address
     - field.field.profile.common.management_plans_current
     - field.field.profile.common.management_plans_future
+    - field.field.profile.common.management_software
     - field.field.profile.common.mission
     - field.field.profile.common.motivations
     - field.field.profile.common.name
@@ -60,89 +62,89 @@ bundle: common
 mode: default
 content:
   acres:
+    type: number
     weight: 68
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   animal_count:
+    type: number
     weight: 28
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   animal_count_by_type:
+    type: json_textarea
     weight: 51
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: json_textarea
-    region: content
   animal_types:
+    type: options_select
     weight: 52
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   area_unit_preference:
+    type: options_select
     weight: 67
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   average_annual_rainfall:
+    type: number
     weight: 76
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   average_annual_temperature:
-    weight: 74
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
     type: number
+    weight: 74
     region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
   certifications_current:
+    type: string_textfield
     weight: 79
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   certifications_desired:
+    type: string_textfield
     weight: 80
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   climate_zone:
+    type: options_select
     weight: 66
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   collaboration_interest:
+    type: options_select
     weight: 58
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   company:
+    type: string_textfield
     weight: 29
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   created:
     type: datetime_timestamp
     weight: 20
@@ -150,216 +152,232 @@ content:
     settings: {  }
     third_party_settings: {  }
   equity_practices:
+    type: string_textfield
     weight: 81
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   farm_cell_phone:
+    type: string_textfield
     weight: 63
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   farm_email:
+    type: string_textfield
     weight: 64
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   farm_leadership_experience:
+    type: number
     weight: 78
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
+  farm_management_system:
+    type: string_textfield
+    weight: 85
     region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   farm_outline:
+    type: geofield_latlon
     weight: 56
+    region: content
     settings:
       html5_geolocation: false
     third_party_settings: {  }
-    type: geofield_latlon
-    region: content
   farm_physical_address:
+    type: address_default
     weight: 55
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: address_default
-    region: content
   farm_types:
+    type: options_select
     weight: 45
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   farmos_url:
+    type: string_textfield
     weight: 34
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   flexible:
+    type: json_textarea
     weight: 47
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: json_textarea
-    region: content
   goals:
+    type: options_select
     weight: 35
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   hardiness_zone:
+    type: options_select
     weight: 72
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   indigenous_territory:
+    type: string_textfield
     weight: 82
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   land_use_percentage_by_pro:
-    weight: 49
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
     type: json_textarea
+    weight: 49
     region: content
-  mailing_address:
-    weight: 54
-    settings: {  }
-    third_party_settings: {  }
-    type: address_default
-    region: content
-  management_plans_current:
-    weight: 36
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  management_plans_future:
-    weight: 38
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  mission:
-    weight: 39
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  mailing_address:
+    type: address_default
+    weight: 54
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  management_plans_current:
+    type: options_select
+    weight: 36
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  management_plans_future:
+    type: options_select
+    weight: 38
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  management_software:
+    type: string_textfield
+    weight: 86
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  mission:
     type: text_textarea
+    weight: 39
     region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   motivations:
+    type: options_select
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   name:
+    type: string_textfield
     weight: 26
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   preferred_contact_method:
+    type: options_select
     weight: 60
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   product_categories:
+    type: options_select
     weight: 40
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   products_details:
+    type: string_textfield
     weight: 84
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   products_value_added:
+    type: string_textfield
     weight: 83
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   rain_unit_preference:
+    type: options_select
     weight: 77
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   rent_acreage_percentage:
+    type: number
     weight: 43
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   renting:
+    type: boolean_checkbox
     weight: 42
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   schema_version:
+    type: string_textfield
     weight: 61
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   soil_composition:
+    type: json_textarea
     weight: 59
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: json_textarea
-    region: content
   status:
     type: boolean_checkbox
-    settings:
-      display_label: false
     weight: 0
     region: content
+    settings:
+      display_label: false
     third_party_settings: {  }
   temperature_unit_preference:
+    type: options_select
     weight: 75
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   title:
     type: string_textfield
     weight: -5
@@ -370,28 +388,28 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
     weight: 15
     region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   unique_id:
+    type: string_textfield
     weight: 53
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   website:
+    type: string_textfield
     weight: 70
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
 hidden: {  }

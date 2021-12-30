@@ -19,6 +19,7 @@ dependencies:
     - field.field.profile.common.farm_cell_phone
     - field.field.profile.common.farm_email
     - field.field.profile.common.farm_leadership_experience
+    - field.field.profile.common.farm_management_system
     - field.field.profile.common.farm_outline
     - field.field.profile.common.farm_physical_address
     - field.field.profile.common.farm_types
@@ -31,6 +32,7 @@ dependencies:
     - field.field.profile.common.mailing_address
     - field.field.profile.common.management_plans_current
     - field.field.profile.common.management_plans_future
+    - field.field.profile.common.management_software
     - field.field.profile.common.mission
     - field.field.profile.common.motivations
     - field.field.profile.common.name
@@ -62,7 +64,7 @@ bundle: common
 mode: default
 content:
   acres:
-    weight: 63
+    type: number_decimal
     label: above
     settings:
       thousand_separator: ''
@@ -70,49 +72,49 @@ content:
       scale: 2
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_decimal
+    weight: 63
     region: content
   animal_count:
-    weight: 23
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 23
     region: content
   animal_count_by_type:
-    weight: 46
+    type: json
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: json
+    weight: 46
     region: content
   animal_types:
-    weight: 47
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 47
     region: content
   area_unit_preference:
-    weight: 62
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 62
     region: content
   average_annual_rainfall:
-    weight: 71
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 71
     region: content
   average_annual_temperature:
-    weight: 69
+    type: number_decimal
     label: above
     settings:
       thousand_separator: ''
@@ -120,316 +122,332 @@ content:
       scale: 2
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_decimal
+    weight: 69
     region: content
   certifications_current:
-    weight: 74
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 74
     region: content
   certifications_desired:
-    weight: 75
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 75
     region: content
   climate_zone:
-    weight: 61
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 61
     region: content
   collaboration_interest:
-    weight: 53
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 53
     region: content
   company:
-    weight: 24
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 24
     region: content
   created:
-    label: above
     type: timestamp
-    weight: 20
-    region: content
+    label: above
     settings:
       date_format: medium
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
+    weight: 20
+    region: content
   equity_practices:
-    weight: 76
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 76
     region: content
   farm_cell_phone:
-    weight: 58
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 58
     region: content
   farm_email:
-    weight: 59
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 59
     region: content
   farm_leadership_experience:
-    weight: 73
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 73
+    region: content
+  farm_management_system:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 80
     region: content
   farm_outline:
-    weight: 51
+    type: geofield_default
     label: above
     settings:
       output_format: wkt
       output_escape: true
     third_party_settings: {  }
-    type: geofield_default
+    weight: 51
     region: content
   farm_physical_address:
-    weight: 50
+    type: address_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: address_default
+    weight: 50
     region: content
   farm_types:
-    weight: 40
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 40
     region: content
   farmos_url:
-    weight: 29
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 29
     region: content
   flexible:
-    weight: 42
+    type: json
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: json
+    weight: 42
     region: content
   goals:
-    weight: 30
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 30
     region: content
   hardiness_zone:
-    weight: 67
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 67
     region: content
   indigenous_territory:
-    weight: 77
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 77
     region: content
   land_use_percentage_by_pro:
-    weight: 44
+    type: json
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: json
+    weight: 44
     region: content
   mailing_address:
-    weight: 49
+    type: address_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: address_default
+    weight: 49
     region: content
   management_plans_current:
-    weight: 31
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 31
     region: content
   management_plans_future:
-    weight: 33
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 33
+    region: content
+  management_software:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 81
     region: content
   mission:
-    weight: 34
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 34
     region: content
   motivations:
-    weight: 45
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 45
     region: content
   name:
-    weight: 21
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 21
     region: content
   preferred_contact_method:
-    weight: 55
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 55
     region: content
   product_categories:
-    weight: 35
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 35
     region: content
   products_details:
-    weight: 79
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 79
     region: content
   products_value_added:
-    weight: 78
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 78
     region: content
   rain_unit_preference:
-    weight: 72
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 72
     region: content
   rent_acreage_percentage:
-    weight: 38
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 38
     region: content
   renting:
-    weight: 37
+    type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 37
     region: content
   schema_version:
-    weight: 56
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 56
     region: content
   soil_composition:
-    weight: 54
+    type: json
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: json
+    weight: 54
     region: content
   status:
     type: boolean
     label: above
-    weight: 0
     settings:
       format: enabled-disabled
       format_custom_false: ''
       format_custom_true: ''
-    region: content
     third_party_settings: {  }
+    weight: 0
+    region: content
   temperature_unit_preference:
-    weight: 70
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 70
     region: content
   title:
-    label: hidden
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: -5
     region: content
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   uid:
-    label: above
     type: author
-    weight: 15
-    region: content
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 15
+    region: content
   unique_id:
-    weight: 48
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 48
     region: content
   website:
-    weight: 65
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 65
     region: content
 hidden: {  }
