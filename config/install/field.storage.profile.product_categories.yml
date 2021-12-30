@@ -18,13 +18,16 @@ settings:
       label: Agroforestry
     -
       value: berries
-      label: Berries
+      label: Small-fruit/berries
     -
       value: grains_other
-      label: Grains
+      label: 'Grains and other row crops'
     -
       value: native_habitat
       label: 'Native Habitat'
+    -
+      value: hay_alfalfa
+      label: Hay/Alfalfa
     -
       value: orchard_vine
       label: 'Orchard or Vine'
@@ -37,6 +40,12 @@ settings:
     -
       value: rangeland
       label: Rangeland
+    -
+      value: dairy
+      label: Dairy
+    -
+      value: aquaculture
+      label: Aquaculture
   allowed_values_function: ''
 module: options
 locked: false
