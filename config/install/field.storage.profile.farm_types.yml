@@ -30,16 +30,22 @@ settings:
       label: Pasture
     -
       value: wholesale_farm
-      label: Wholesale
+      label: 'Commercial; Wholesale'
     -
-      value: direcctsale_farm
-      label: 'Direct Sale'
+      value: directsale_farm
+      label: 'Commercial; Direct to Consumer'
     -
       value: hobby_farm
       label: 'Hobby or Lifestyle'
     -
+      value: cooperative_farm
+      label: 'Cooperative/Community Farm'
+    -
       value: community_garden
       label: 'Community Garden'
+    -
+      value: nursery_farm
+      label: 'Nursery Farm'
   allowed_values_function: ''
 module: options
 locked: false
