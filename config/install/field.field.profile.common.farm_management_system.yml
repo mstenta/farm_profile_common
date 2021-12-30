@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.farm_management_system
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.farm_management_system
+field_name: farm_management_system
+entity_type: profile
+bundle: common
+label: 'Farm Management System'
+description: "How do you keep farm management records?\r\n- Pen / Paper\r\n- Spreadsheet\r\n- Open Source Software\r\n- Other Software\r\n- In your head"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
