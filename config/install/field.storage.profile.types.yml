@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_profile
+    - options
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.types
+field_name: types
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: education_farm
+      label: Educational
+    -
+      value: nonprofit_farm
+      label: Non-Profit
+    -
+      value: research_farm
+      label: Research
+    -
+      value: home_garden
+      label: 'Home Garden'
+    -
+      value: pasture
+      label: Pasture
+    -
+      value: wholesale_farm
+      label: 'Commercial; Wholesale'
+    -
+      value: directsale_farm
+      label: 'Commercial; Direct to Consumer'
+    -
+      value: hobby_farm
+      label: 'Hobby or Lifestyle'
+    -
+      value: cooperative_farm
+      label: 'Cooperative/Community Farm'
+    -
+      value: community_garden
+      label: 'Community Garden'
+    -
+      value: nursery_farm
+      label: 'Nursery Farm'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

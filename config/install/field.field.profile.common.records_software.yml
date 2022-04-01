@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.records_software
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.records_software
+field_name: records_software
+entity_type: profile
+bundle: common
+label: 'Farm Management Software'
+description: 'Which farm management software do you use?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

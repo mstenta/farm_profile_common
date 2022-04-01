@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.interest
+  module:
+    - options
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.interest
+field_name: interest
+entity_type: profile
+bundle: common
+label: 'Interests and Opportunities'
+description: 'What opportunities are you looking for?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

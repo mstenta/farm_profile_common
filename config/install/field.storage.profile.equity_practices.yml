@@ -1,11 +1,11 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - farm_profile
   enforced:
     module:
       - farm_profile_common
-  module:
-    - farm_profile
 id: profile.equity_practices
 field_name: equity_practices
 entity_type: profile

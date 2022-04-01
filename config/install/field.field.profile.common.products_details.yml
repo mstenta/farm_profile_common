@@ -12,7 +12,7 @@ field_name: products_details
 entity_type: profile
 bundle: common
 label: 'Products Details'
-description: 'What products, such as crops or livestock, are you a primary producer for?'
+description: 'What do you produce?'
 required: false
 translatable: false
 default_value: {  }

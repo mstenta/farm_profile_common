@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.goal_1
+  module:
+    - options
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.goal_1
+field_name: goal_1
+entity_type: profile
+bundle: common
+label: 'Most Important Goal'
+description: 'Select the most important goal in your Farm Operation'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

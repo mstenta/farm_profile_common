@@ -4,11 +4,11 @@ dependencies:
   config:
     - farm_profile.profile_type.common
     - field.storage.profile.hardiness_zone
+  module:
+    - options
   enforced:
     module:
       - farm_profile_common
-  module:
-    - options
 id: profile.common.hardiness_zone
 field_name: hardiness_zone
 entity_type: profile

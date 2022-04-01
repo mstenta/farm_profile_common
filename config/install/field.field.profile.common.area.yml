@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.area
+  module:
+    - geofield
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.area
+field_name: area
+entity_type: profile
+bundle: common
+label: 'General Farm Outline'
+description: 'Draw a circle to encompass the land in your farm.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

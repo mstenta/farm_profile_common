@@ -1,12 +1,12 @@
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - farm_profile_common
   module:
     - address
     - farm_profile
+  enforced:
+    module:
+      - farm_profile_common
 id: profile.mailing_address
 field_name: mailing_address
 entity_type: profile

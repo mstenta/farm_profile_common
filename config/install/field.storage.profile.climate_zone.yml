@@ -1,12 +1,12 @@
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - farm_profile_common
   module:
     - farm_profile
     - options
+  enforced:
+    module:
+      - farm_profile_common
 id: profile.climate_zone
 field_name: climate_zone
 entity_type: profile

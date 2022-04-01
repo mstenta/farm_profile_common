@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.units
+  module:
+    - options
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.units
+field_name: units
+entity_type: profile
+bundle: common
+label: 'Units Preference'
+description: 'Select Metric or Imperial'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

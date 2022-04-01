@@ -11,8 +11,8 @@ id: profile.common.name
 field_name: name
 entity_type: profile
 bundle: common
-label: 'Farm Name'
-description: 'Name of the farm!'
+label: 'Contact Name'
+description: 'Name of the primary contact for the Farm Organization'
 required: true
 translatable: false
 default_value: {  }

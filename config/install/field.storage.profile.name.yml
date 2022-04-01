@@ -1,19 +1,19 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - farm_profile
   enforced:
     module:
       - farm_profile_common
-  module:
-    - farm_profile
 id: profile.name
 field_name: name
 entity_type: profile
 type: string
 settings:
   max_length: 255
-  is_ascii: false
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

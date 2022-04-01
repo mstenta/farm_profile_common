@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.bio
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.bio
+field_name: bio
+entity_type: profile
+bundle: common
+label: 'Personal Bio or Mission'
+description: 'Tell us a little about yourself and/or operation, such as why you farm, what your favorite thing about farming is, or your farming story/connection. (150 words maximum)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.email
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.email
+field_name: email
+entity_type: profile
+bundle: common
+label: 'Contact Email Address'
+description: 'Email address for Farm Organization (farm owner, manager, etc.)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

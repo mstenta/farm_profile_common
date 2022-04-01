@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.animals_detail
+  module:
+    - json_field
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.animals_detail
+field_name: animals_detail
+entity_type: profile
+bundle: common
+label: 'Total Number of Animals, by Type'
+description: "How many of each type of animal do you have?\r\n\r\nkeys: animal species\r\nvalue: number count"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: json_native_binary

@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_profile
+    - options
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.preferred
+field_name: preferred
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: text
+      label: Text
+    -
+      value: phone
+      label: Phone
+    -
+      value: email
+      label: Email
+    -
+      value: mail
+      label: Mail
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

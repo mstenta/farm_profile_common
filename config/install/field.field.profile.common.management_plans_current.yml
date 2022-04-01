@@ -4,18 +4,18 @@ dependencies:
   config:
     - farm_profile.profile_type.common
     - field.storage.profile.management_plans_current
+  module:
+    - options
   enforced:
     module:
       - farm_profile_common
-  module:
-    - options
 id: profile.common.management_plans_current
 field_name: management_plans_current
 entity_type: profile
 bundle: common
 label: 'Current Management Plans'
-description: 'What plans, strategies and overall techniques do you use to manage your land?'
-required: false
+description: 'Do you have any currently active Management Plans?'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

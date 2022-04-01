@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.immediate_data_source
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.immediate_data_source
+field_name: immediate_data_source
+entity_type: profile
+bundle: common
+label: 'Immediate Data Source'
+description: 'The service or source that a specific instance of a farm profile has come from.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

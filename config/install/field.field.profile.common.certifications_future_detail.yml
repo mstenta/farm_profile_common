@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.certifications_future_detail
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.certifications_future_detail
+field_name: certifications_future_detail
+entity_type: profile
+bundle: common
+label: 'Future Certifications Detail'
+description: 'Select future certification(s)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

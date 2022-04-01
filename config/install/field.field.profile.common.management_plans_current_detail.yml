@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.management_plans_current_detail
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.management_plans_current_detail
+field_name: management_plans_current_detail
+entity_type: profile
+bundle: common
+label: 'Current Management Plans Detail'
+description: 'Select the currently active management plan(s)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

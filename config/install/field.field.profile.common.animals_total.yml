@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.animals_total
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.animals_total
+field_name: animals_total
+entity_type: profile
+bundle: common
+label: 'Total Number of Animals'
+description: 'Total animal count in your Farm Operation'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: count
+field_type: integer

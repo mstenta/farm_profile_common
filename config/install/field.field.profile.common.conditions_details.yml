@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.conditions_details
+  module:
+    - json_field
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.conditions_details
+field_name: conditions_details
+entity_type: profile
+bundle: common
+label: 'Conditions Details'
+description: 'Additional climate, soil and environmental conditions details around the general farm area.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: json_native_binary

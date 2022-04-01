@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.land_other_details
+  module:
+    - json_field
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.land_other_details
+field_name: land_other_details
+entity_type: profile
+bundle: common
+label: 'Other Land Information by percent'
+description: 'Percentage of the land that is rented, native title, cooperatively owned, in land trusts, etc'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: json_native_binary

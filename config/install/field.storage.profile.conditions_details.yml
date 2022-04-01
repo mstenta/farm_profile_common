@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_profile
+    - json_field
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.conditions_details
+field_name: conditions_details
+entity_type: profile
+type: json_native_binary
+settings: {  }
+module: json_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

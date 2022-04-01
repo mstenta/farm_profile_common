@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_profile
+    - options
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.goal_1
+field_name: goal_1
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: profitability
+      label: Profitability
+    -
+      value: risk_minimization
+      label: 'Risk Minimization'
+    -
+      value: soil_biology
+      label: 'Soil Biology'
+    -
+      value: soil_fertility
+      label: 'Soil Fertility'
+    -
+      value: soil_structure
+      label: 'Soil Structure'
+    -
+      value: environmental_stewardship
+      label: 'Environmental Stewardship'
+    -
+      value: product_quality
+      label: 'Product Quality'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

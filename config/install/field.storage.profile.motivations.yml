@@ -1,55 +1,22 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - farm_profile
   enforced:
     module:
       - farm_profile_common
-  module:
-    - farm_profile
-    - options
 id: profile.motivations
 field_name: motivations
 entity_type: profile
-type: list_string
+type: string
 settings:
-  allowed_values:
-    -
-      value: community
-      label: Community
-    -
-      value: save_the_world
-      label: 'Save the world'
-    -
-      value: education
-      label: Education
-    -
-      value: research
-      label: Research
-    -
-      value: family_farm
-      label: 'Family farm'
-    -
-      value: lifestyle
-      label: Lifestyle
-    -
-      value: love_nature
-      label: 'Love of nature'
-    -
-      value: responsible_use
-      label: 'Responsible use of the land'
-    -
-      value: be_productive
-      label: 'Be productive'
-    -
-      value: feeding_others
-      label: 'Feed others'
-    -
-      value: paid_work
-      label: 'Paid work'
-  allowed_values_function: ''
-module: options
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

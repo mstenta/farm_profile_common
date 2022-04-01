@@ -4,11 +4,11 @@ dependencies:
   config:
     - farm_profile.profile_type.common
     - field.storage.profile.flexible
+  module:
+    - json_field
   enforced:
     module:
       - farm_profile_common
-  module:
-    - json_field
 id: profile.common.flexible
 field_name: flexible
 entity_type: profile

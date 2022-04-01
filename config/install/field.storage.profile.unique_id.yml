@@ -1,11 +1,11 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - farm_profile
   enforced:
     module:
       - farm_profile_common
-  module:
-    - farm_profile
 id: profile.unique_id
 field_name: unique_id
 entity_type: profile

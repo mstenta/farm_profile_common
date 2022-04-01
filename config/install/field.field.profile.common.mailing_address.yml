@@ -4,11 +4,11 @@ dependencies:
   config:
     - farm_profile.profile_type.common
     - field.storage.profile.mailing_address
+  module:
+    - address
   enforced:
     module:
       - farm_profile_common
-  module:
-    - address
 id: profile.common.mailing_address
 field_name: mailing_address
 entity_type: profile

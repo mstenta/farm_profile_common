@@ -1,11 +1,11 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - farm_profile
   enforced:
     module:
       - farm_profile_common
-  module:
-    - farm_profile
 id: profile.farm_leadership_experience
 field_name: farm_leadership_experience
 entity_type: profile

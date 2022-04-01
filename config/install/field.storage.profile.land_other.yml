@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_profile
+    - options
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.land_other
+field_name: land_other
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: rent
+      label: 'Leased / Rented'
+    -
+      value: share_farm
+      label: Share-Farmed
+    -
+      value: pastoral_lease
+      label: 'Pastoral Lease'
+    -
+      value: native_land_title
+      label: 'in Native Land Title'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

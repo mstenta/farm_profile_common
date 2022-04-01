@@ -7,17 +7,15 @@ dependencies:
   enforced:
     module:
       - farm_profile_common
-  module:
-    - options
 id: profile.common.motivations
 field_name: motivations
 entity_type: profile
 bundle: common
 label: Motivations
-description: 'Detail the motivations of the folks behind this farm.'
+description: 'What are your primary motivations for farming?'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: string

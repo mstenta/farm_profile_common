@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.organization
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.organization
+field_name: organization
+entity_type: profile
+bundle: common
+label: 'Organization Name'
+description: 'Name of the Farm or Farm Organization'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,65 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_profile
+    - options
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.products_animals
+field_name: products_animals
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: dairy_cattle
+      label: 'Dairy cattle'
+    -
+      value: beef_cattle
+      label: 'Beef cattle'
+    -
+      value: hogs_pigs
+      label: 'Hogs & Pigs'
+    -
+      value: goats
+      label: Goats
+    -
+      value: sheep
+      label: Sheep
+    -
+      value: equine
+      label: 'Horses, donkeys and other equine'
+    -
+      value: poultry
+      label: Poultry
+    -
+      value: aquaculture
+      label: Aquaculture
+    -
+      value: bison
+      label: Bison
+    -
+      value: bee_colony
+      label: 'Bee Colonies'
+    -
+      value: llama
+      label: Llama
+    -
+      value: rabbit
+      label: Rabbit
+    -
+      value: mink
+      label: Mink
+    -
+      value: alpaca
+      label: Alpaca
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

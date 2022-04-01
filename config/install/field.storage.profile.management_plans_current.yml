@@ -1,12 +1,12 @@
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - farm_profile_common
   module:
     - farm_profile
     - options
+  enforced:
+    module:
+      - farm_profile_common
 id: profile.management_plans_current
 field_name: management_plans_current
 entity_type: profile
@@ -14,30 +14,15 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: carbon_farm
-      label: 'Carbon Farm'
+      value: 'yes'
+      label: 'Yes'
     -
-      value: habitat_plan
-      label: 'Habitat Plan'
-    -
-      value: holistic_grazing
-      label: 'Holistic Grazing'
-    -
-      value: non_nrcs_conservation
-      label: 'Non-NRCS Conservation'
-    -
-      value: soil_health_management
-      label: 'Soil Health Management'
-    -
-      value: nutrient_management
-      label: 'Nutrient Management'
-    -
-      value: organic_systems
-      label: 'Organic Systems'
+      value: 'no'
+      label: 'No'
   allowed_values_function: ''
 module: options
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

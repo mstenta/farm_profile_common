@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_profile
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.area_total_hectares
+field_name: area_total_hectares
+entity_type: profile
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

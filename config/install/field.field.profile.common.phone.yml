@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.phone
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.phone
+field_name: phone
+entity_type: profile
+bundle: common
+label: 'Contact Phone'
+description: 'Contact Phone Number for the Farm Organization (owner, manager, etc.)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

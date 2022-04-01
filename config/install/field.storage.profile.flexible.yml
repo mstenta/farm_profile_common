@@ -1,12 +1,12 @@
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - farm_profile_common
   module:
     - farm_profile
     - json_field
+  enforced:
+    module:
+      - farm_profile_common
 id: profile.flexible
 field_name: flexible
 entity_type: profile

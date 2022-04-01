@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.products_animals
+  module:
+    - options
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.products_animals
+field_name: products_animals
+entity_type: profile
+bundle: common
+label: 'Animal Types / Products'
+description: 'What animals do you have?'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

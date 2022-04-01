@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.land_other
+  module:
+    - options
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.land_other
+field_name: land_other
+entity_type: profile
+bundle: common
+label: 'Other Land Information'
+description: 'Choose any of the following that apply to land used by your Farm Operation'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

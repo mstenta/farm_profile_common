@@ -3,61 +3,68 @@ status: true
 dependencies:
   config:
     - farm_profile.profile_type.common
-    - field.field.profile.common.acres
-    - field.field.profile.common.animal_count
-    - field.field.profile.common.animal_count_by_type
-    - field.field.profile.common.animal_types
-    - field.field.profile.common.area_unit_preference
+    - field.field.profile.common.animals_detail
+    - field.field.profile.common.animals_total
+    - field.field.profile.common.area
+    - field.field.profile.common.area_total_hectares
     - field.field.profile.common.average_annual_rainfall
     - field.field.profile.common.average_annual_temperature
+    - field.field.profile.common.bio
     - field.field.profile.common.certifications_current
-    - field.field.profile.common.certifications_desired
+    - field.field.profile.common.certifications_current_detail
+    - field.field.profile.common.certifications_future
+    - field.field.profile.common.certifications_future_detail
     - field.field.profile.common.climate_zone
-    - field.field.profile.common.collaboration_interest
-    - field.field.profile.common.company
+    - field.field.profile.common.community_outline
+    - field.field.profile.common.conditions_details
+    - field.field.profile.common.county
+    - field.field.profile.common.email
     - field.field.profile.common.equity_practices
-    - field.field.profile.common.farm_cell_phone
-    - field.field.profile.common.farm_email
     - field.field.profile.common.farm_leadership_experience
-    - field.field.profile.common.farm_management_system
-    - field.field.profile.common.farm_outline
-    - field.field.profile.common.farm_physical_address
-    - field.field.profile.common.farm_types
-    - field.field.profile.common.farmos_url
     - field.field.profile.common.flexible
-    - field.field.profile.common.goals
+    - field.field.profile.common.goal_1
+    - field.field.profile.common.goal_2
+    - field.field.profile.common.goal_3
     - field.field.profile.common.hardiness_zone
+    - field.field.profile.common.immediate_data_source
     - field.field.profile.common.indigenous_territory
-    - field.field.profile.common.land_use_percentage_by_pro
+    - field.field.profile.common.interest
+    - field.field.profile.common.land_other
+    - field.field.profile.common.land_other_details
+    - field.field.profile.common.land_type_details
+    - field.field.profile.common.location
     - field.field.profile.common.mailing_address
     - field.field.profile.common.management_plans_current
+    - field.field.profile.common.management_plans_current_detail
     - field.field.profile.common.management_plans_future
-    - field.field.profile.common.management_software
-    - field.field.profile.common.mission
+    - field.field.profile.common.management_plans_future_detail
     - field.field.profile.common.motivations
     - field.field.profile.common.name
-    - field.field.profile.common.preferred_contact_method
-    - field.field.profile.common.product_categories
+    - field.field.profile.common.organization
+    - field.field.profile.common.organization_id
+    - field.field.profile.common.phone
+    - field.field.profile.common.preferred
+    - field.field.profile.common.products_animals
+    - field.field.profile.common.products_categories
     - field.field.profile.common.products_details
     - field.field.profile.common.products_value_added
-    - field.field.profile.common.rain_unit_preference
-    - field.field.profile.common.rent_acreage_percentage
-    - field.field.profile.common.renting
+    - field.field.profile.common.records_software
+    - field.field.profile.common.records_system
+    - field.field.profile.common.role
     - field.field.profile.common.schema_version
-    - field.field.profile.common.soil_composition
-    - field.field.profile.common.temperature_unit_preference
+    - field.field.profile.common.social
+    - field.field.profile.common.types
     - field.field.profile.common.unique_id
+    - field.field.profile.common.units
     - field.field.profile.common.website
+  module:
+    - address
+    - json_field
+    - options
+    - user
   enforced:
     module:
       - farm_profile_common
-  module:
-    - address
-    - geofield
-    - json_field
-    - options
-    - text
-    - user
 id: profile.common.default
 targetEntityType: profile
 bundle: common
@@ -125,12 +132,11 @@ content:
     weight: 69
     region: content
   certifications_current:
-    type: string
+    type: list_default
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    weight: 74
+    weight: 83
     region: content
   certifications_desired:
     type: string
@@ -213,15 +219,6 @@ content:
     third_party_settings: {  }
     weight: 80
     region: content
-  farm_outline:
-    type: geofield_default
-    label: above
-    settings:
-      output_format: wkt
-      output_escape: true
-    third_party_settings: {  }
-    weight: 51
-    region: content
   farm_physical_address:
     type: address_default
     label: above
@@ -251,12 +248,26 @@ content:
     third_party_settings: {  }
     weight: 42
     region: content
-  goals:
+  goal_1:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 30
+    weight: 84
+    region: content
+  goal_2:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 85
+    region: content
+  goal_3:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 86
     region: content
   hardiness_zone:
     type: list_default
@@ -317,11 +328,12 @@ content:
     weight: 34
     region: content
   motivations:
-    type: list_default
+    type: string
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 45
+    weight: 82
     region: content
   name:
     type: string
@@ -450,4 +462,36 @@ content:
     third_party_settings: {  }
     weight: 65
     region: content
-hidden: {  }
+hidden:
+  animals_detail: true
+  animals_total: true
+  area: true
+  area_total_hectares: true
+  bio: true
+  certifications_current_detail: true
+  certifications_future: true
+  certifications_future_detail: true
+  community_outline: true
+  conditions_details: true
+  county: true
+  email: true
+  immediate_data_source: true
+  interest: true
+  land_other: true
+  land_other_details: true
+  land_type_details: true
+  location: true
+  management_plans_current_detail: true
+  management_plans_future_detail: true
+  organization: true
+  organization_id: true
+  phone: true
+  preferred: true
+  products_animals: true
+  products_categories: true
+  records_software: true
+  records_system: true
+  role: true
+  social: true
+  types: true
+  units: true

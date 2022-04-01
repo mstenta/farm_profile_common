@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.community_outline
+  module:
+    - geofield
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.community_outline
+field_name: community_outline
+entity_type: profile
+bundle: common
+label: 'Producer Community Outline'
+description: 'Outline the area with producers like you: a similar bioregion, people who produce similar things, people you actively work/discuss/compete with, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

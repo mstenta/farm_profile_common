@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_profile
+    - geofield
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.community_outline
+field_name: community_outline
+entity_type: profile
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
