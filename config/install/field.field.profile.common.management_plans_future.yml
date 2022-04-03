@@ -14,7 +14,7 @@ field_name: management_plans_future
 entity_type: profile
 bundle: common
 label: 'Future Management Plans'
-description: 'Do you want any (other) certifications or plan to have them in place in the future?'
+description: 'Do you want any (other) management plans or plan to have them in place in the future?'
 required: true
 translatable: false
 default_value: {  }
