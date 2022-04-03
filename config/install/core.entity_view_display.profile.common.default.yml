@@ -6,6 +6,7 @@ dependencies:
     - field.field.profile.common.animals_detail
     - field.field.profile.common.animals_total
     - field.field.profile.common.area
+    - field.field.profile.common.area_community
     - field.field.profile.common.area_total_hectares
     - field.field.profile.common.average_annual_rainfall
     - field.field.profile.common.average_annual_temperature
@@ -15,7 +16,6 @@ dependencies:
     - field.field.profile.common.certifications_future
     - field.field.profile.common.certifications_future_detail
     - field.field.profile.common.climate_zone
-    - field.field.profile.common.community_outline
     - field.field.profile.common.conditions_details
     - field.field.profile.common.county
     - field.field.profile.common.email
@@ -59,6 +59,7 @@ dependencies:
     - field.field.profile.common.website
   module:
     - address
+    - geofield
     - json_field
     - options
     - user
@@ -103,6 +104,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 47
+    region: content
+  area_community:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 91
     region: content
   area_unit_preference:
     type: list_default
@@ -471,7 +481,6 @@ hidden:
   certifications_current_detail: true
   certifications_future: true
   certifications_future_detail: true
-  community_outline: true
   conditions_details: true
   county: true
   email: true
