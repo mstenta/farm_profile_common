@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.land_type_detail
+  module:
+    - json_field
+id: profile.common.land_type_detail
+field_name: land_type_detail
+entity_type: profile
+bundle: common
+label: 'Land Use Detail, by Type'
+description: "The breakdown of how your land is used.\r\n\r\nKeys include:\r\nagroforestry, berries, grains_other, native_habitat, orchard_vine, pasture, vegetables, orchard_vine, rangeland"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: json_native_binary

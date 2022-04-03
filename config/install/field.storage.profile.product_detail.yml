@@ -3,20 +3,17 @@ status: true
 dependencies:
   module:
     - farm_profile
-  enforced:
-    module:
-      - farm_profile_common
-id: profile.products_details
-field_name: products_details
+id: profile.product_detail
+field_name: product_detail
 entity_type: profile
 type: string
 settings:
   max_length: 255
-  is_ascii: false
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

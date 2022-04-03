@@ -3,17 +3,14 @@ status: true
 dependencies:
   config:
     - farm_profile.profile_type.common
-    - field.storage.profile.conditions_details
+    - field.storage.profile.conditions_detail
   module:
     - json_field
-  enforced:
-    module:
-      - farm_profile_common
-id: profile.common.conditions_details
-field_name: conditions_details
+id: profile.common.conditions_detail
+field_name: conditions_detail
 entity_type: profile
 bundle: common
-label: 'Conditions Details'
+label: 'Conditions Detail'
 description: 'Additional climate, soil and environmental conditions details around the general farm area.'
 required: false
 translatable: false

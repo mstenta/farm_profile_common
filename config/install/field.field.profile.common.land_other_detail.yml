@@ -3,14 +3,11 @@ status: true
 dependencies:
   config:
     - farm_profile.profile_type.common
-    - field.storage.profile.land_other_details
+    - field.storage.profile.land_other_detail
   module:
     - json_field
-  enforced:
-    module:
-      - farm_profile_common
-id: profile.common.land_other_details
-field_name: land_other_details
+id: profile.common.land_other_detail
+field_name: land_other_detail
 entity_type: profile
 bundle: common
 label: 'Other Land Information by percent'

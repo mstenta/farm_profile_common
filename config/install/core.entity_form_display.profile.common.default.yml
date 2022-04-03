@@ -16,7 +16,7 @@ dependencies:
     - field.field.profile.common.certifications_future
     - field.field.profile.common.certifications_future_detail
     - field.field.profile.common.climate_zone
-    - field.field.profile.common.conditions_details
+    - field.field.profile.common.conditions_detail
     - field.field.profile.common.county
     - field.field.profile.common.email
     - field.field.profile.common.equity_practices
@@ -30,8 +30,8 @@ dependencies:
     - field.field.profile.common.indigenous_territory
     - field.field.profile.common.interest
     - field.field.profile.common.land_other
-    - field.field.profile.common.land_other_details
-    - field.field.profile.common.land_type_details
+    - field.field.profile.common.land_other_detail
+    - field.field.profile.common.land_type_detail
     - field.field.profile.common.location
     - field.field.profile.common.mailing_address
     - field.field.profile.common.management_plans_current
@@ -44,9 +44,9 @@ dependencies:
     - field.field.profile.common.organization_id
     - field.field.profile.common.phone
     - field.field.profile.common.preferred
+    - field.field.profile.common.product_detail
     - field.field.profile.common.products_animals
     - field.field.profile.common.products_categories
-    - field.field.profile.common.products_details
     - field.field.profile.common.products_value_added
     - field.field.profile.common.records_software
     - field.field.profile.common.records_system
@@ -158,6 +158,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  conditions_detail:
+    type: json_textarea
+    weight: 93
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 20
@@ -263,6 +271,22 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  land_other_detail:
+    type: json_textarea
+    weight: 95
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  land_type_detail:
+    type: json_textarea
+    weight: 94
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   land_use_percentage_by_pro:
     type: json_textarea
     weight: 49
@@ -333,9 +357,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  products_details:
+  product_detail:
     type: string_textfield
-    weight: 84
+    weight: 92
     region: content
     settings:
       size: 60
@@ -441,14 +465,11 @@ hidden:
   certifications_current_detail: true
   certifications_future: true
   certifications_future_detail: true
-  conditions_details: true
   county: true
   email: true
   immediate_data_source: true
   interest: true
   land_other: true
-  land_other_details: true
-  land_type_details: true
   location: true
   management_plans_current_detail: true
   management_plans_future_detail: true

@@ -4,11 +4,8 @@ dependencies:
   module:
     - farm_profile
     - json_field
-  enforced:
-    module:
-      - farm_profile_common
-id: profile.land_type_details
-field_name: land_type_details
+id: profile.conditions_detail
+field_name: conditions_detail
 entity_type: profile
 type: json_native_binary
 settings: {  }

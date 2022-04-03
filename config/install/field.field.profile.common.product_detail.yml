@@ -3,15 +3,12 @@ status: true
 dependencies:
   config:
     - farm_profile.profile_type.common
-    - field.storage.profile.products_details
-  enforced:
-    module:
-      - farm_profile_common
-id: profile.common.products_details
-field_name: products_details
+    - field.storage.profile.product_detail
+id: profile.common.product_detail
+field_name: product_detail
 entity_type: profile
 bundle: common
-label: 'Products Details'
+label: 'Product Detail'
 description: 'What do you produce?'
 required: false
 translatable: false
