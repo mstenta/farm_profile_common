@@ -29,13 +29,7 @@ settings:
       override: hidden
     familyName:
       override: hidden
-    organization:
-      override: optional
-    addressLine2:
-      override: optional
-    sortingCode:
-      override: optional
     dependentLocality:
-      override: optional
+      override: hidden
   fields: {  }
 field_type: address
