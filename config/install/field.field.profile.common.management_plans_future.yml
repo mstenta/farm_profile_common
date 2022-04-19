@@ -15,7 +15,7 @@ entity_type: profile
 bundle: common
 label: 'Future Management Plans'
 description: 'Do you want any (other) management plans or plan to have them in place in the future?'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

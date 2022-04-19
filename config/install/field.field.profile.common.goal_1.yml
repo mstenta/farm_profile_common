@@ -15,7 +15,7 @@ entity_type: profile
 bundle: common
 label: 'Most Important Goal'
 description: 'Select the most important goal in your Farm Operation'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
