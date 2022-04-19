@@ -3,54 +3,18 @@ status: true
 dependencies:
   module:
     - farm_profile
-    - options
   enforced:
     module:
       - farm_profile_common
 id: profile.interest
 field_name: interest
 entity_type: profile
-type: list_string
+type: string
 settings:
-  allowed_values:
-    -
-      value: mentorship
-      label: 'Offering or Receiving Mentorship & Guidance'
-    -
-      value: volunteering
-      label: 'Volunteering Opportunities'
-    -
-      value: research
-      label: Research
-    -
-      value: events
-      label: 'Cohosting Events'
-    -
-      value: buy
-      label: 'Buy our products'
-    -
-      value: cooperative
-      label: 'Cooperative and supply chain development'
-    -
-      value: markets
-      label: 'Access to new markets'
-    -
-      value: ecosystem_service_markets
-      label: 'Access to ecosystem service markets'
-    -
-      value: loans
-      label: 'Low cost loans'
-    -
-      value: support
-      label: 'Farm support opportunities'
-    -
-      value: equipment_sharing
-      label: 'Equipment Sharing'
-    -
-      value: work_opportunities
-      label: 'Work Opportunities'
-  allowed_values_function: ''
-module: options
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
 locked: false
 cardinality: -1
 translatable: true
