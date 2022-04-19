@@ -105,6 +105,31 @@ content:
     third_party_settings: {  }
     weight: 47
     region: content
+  animals_detail:
+    type: json
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 33
+    region: content
+  animals_total:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 46
+    region: content
+  area:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 56
+    region: content
   area_community:
     type: geofield_default
     label: above
@@ -112,7 +137,18 @@ content:
       output_format: wkt
       output_escape: true
     third_party_settings: {  }
-    weight: 91
+    weight: 28
+    region: content
+  area_total_hectares:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 55
     region: content
   area_unit_preference:
     type: list_default
@@ -128,7 +164,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 71
+    weight: 15
     region: content
   average_annual_temperature:
     type: number_decimal
@@ -139,14 +175,29 @@ content:
       scale: 2
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 69
+    weight: 14
+    region: content
+  bio:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 54
     region: content
   certifications_current:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 83
+    weight: 21
+    region: content
+  certifications_current_detail:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 53
     region: content
   certifications_desired:
     type: string
@@ -156,12 +207,27 @@ content:
     third_party_settings: {  }
     weight: 75
     region: content
+  certifications_future:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 52
+    region: content
+  certifications_future_detail:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 51
+    region: content
   climate_zone:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 61
+    weight: 11
     region: content
   collaboration_interest:
     type: list_default
@@ -183,7 +249,15 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 88
+    weight: 25
+    region: content
+  county:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 50
     region: content
   created:
     type: timestamp
@@ -193,7 +267,14 @@ content:
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
-    weight: 20
+    weight: 3
+    region: content
+  email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 49
     region: content
   equity_practices:
     type: string
@@ -201,7 +282,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 76
+    weight: 17
     region: content
   farm_cell_phone:
     type: string
@@ -226,7 +307,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 73
+    weight: 16
     region: content
   farm_management_system:
     type: string
@@ -235,6 +316,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 80
+    region: content
+  farm_outline:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 51
     region: content
   farm_physical_address:
     type: address_default
@@ -263,35 +353,43 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 42
+    weight: 7
     region: content
   goal_1:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 84
+    weight: 22
     region: content
   goal_2:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 85
+    weight: 23
     region: content
   goal_3:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 86
+    weight: 24
     region: content
   hardiness_zone:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 67
+    weight: 13
+    region: content
+  immediate_data_source:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 48
     region: content
   indigenous_territory:
     type: string
@@ -299,21 +397,36 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 77
+    weight: 18
+    region: content
+  interest:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 82
+    region: content
+  land_other:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 45
     region: content
   land_other_detail:
     type: json
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 90
+    weight: 27
     region: content
   land_type_detail:
     type: json
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 89
+    weight: 26
     region: content
   land_use_percentage_by_pro:
     type: json
@@ -322,26 +435,49 @@ content:
     third_party_settings: {  }
     weight: 44
     region: content
+  location:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 34
+    region: content
   mailing_address:
     type: address_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 49
+    weight: 9
     region: content
   management_plans_current:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 31
+    weight: 5
+    region: content
+  management_plans_current_detail:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 44
     region: content
   management_plans_future:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 33
+    weight: 6
+    region: content
+  management_plans_future_detail:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 43
     region: content
   management_software:
     type: string
@@ -364,7 +500,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 82
+    weight: 20
     region: content
   name:
     type: string
@@ -372,7 +508,38 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 21
+    weight: 4
+    region: content
+  organization:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 42
+    region: content
+  organization_id:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 41
+    region: content
+  phone:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 40
+    region: content
+  preferred:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 39
     region: content
   preferred_contact_method:
     type: list_default
@@ -388,13 +555,28 @@ content:
     third_party_settings: {  }
     weight: 35
     region: content
+  products_animals:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 32
+    region: content
+  products_categories:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 31
+    region: content
   products_detail:
     type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 87
+    weight: 30
     region: content
   products_value_added:
     type: string
@@ -402,7 +584,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 78
+    weight: 19
     region: content
   rain_unit_preference:
     type: list_default
@@ -410,6 +592,21 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 72
+    region: content
+  records_software:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 38
+    region: content
+  records_system:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 37
     region: content
   rent_acreage_percentage:
     type: number_integer
@@ -430,13 +627,29 @@ content:
     third_party_settings: {  }
     weight: 37
     region: content
+  role:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 36
+    region: content
   schema_version:
     type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 56
+    weight: 10
+    region: content
+  social:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 35
     region: content
   soil_composition:
     type: json
@@ -453,7 +666,7 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   temperature_unit_preference:
     type: list_default
@@ -468,14 +681,21 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: -5
+    weight: 0
+    region: content
+  types:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 29
     region: content
   uid:
     type: author
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 15
+    weight: 2
     region: content
   unique_id:
     type: string
@@ -483,7 +703,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 48
+    weight: 8
+    region: content
+  units:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 57
     region: content
   website:
     type: string
@@ -491,34 +718,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 65
+    weight: 12
     region: content
 hidden:
-  animals_detail: true
-  animals_total: true
-  area: true
-  area_total_hectares: true
-  bio: true
-  certifications_current_detail: true
-  certifications_future: true
-  certifications_future_detail: true
-  county: true
-  email: true
-  immediate_data_source: true
-  interest: true
-  land_other: true
-  location: true
-  management_plans_current_detail: true
-  management_plans_future_detail: true
-  organization: true
-  organization_id: true
-  phone: true
-  preferred: true
-  products_animals: true
-  products_categories: true
-  records_software: true
-  records_system: true
-  role: true
-  social: true
-  types: true
-  units: true
+  outline: true
