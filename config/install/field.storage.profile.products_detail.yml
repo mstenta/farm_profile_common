@@ -3,8 +3,11 @@ status: true
 dependencies:
   module:
     - farm_profile
-id: profile.product_detail
-field_name: product_detail
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.products_detail
+field_name: products_detail
 entity_type: profile
 type: string
 settings:
@@ -13,7 +16,7 @@ settings:
   is_ascii: false
 module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

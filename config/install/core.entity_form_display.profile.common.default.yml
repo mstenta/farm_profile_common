@@ -44,9 +44,9 @@ dependencies:
     - field.field.profile.common.organization_id
     - field.field.profile.common.phone
     - field.field.profile.common.preferred
-    - field.field.profile.common.product_detail
     - field.field.profile.common.products_animals
     - field.field.profile.common.products_categories
+    - field.field.profile.common.products_detail
     - field.field.profile.common.products_value_added
     - field.field.profile.common.records_software
     - field.field.profile.common.records_system
@@ -357,7 +357,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  product_detail:
+  products_detail:
     type: string_textfield
     weight: 92
     region: content
