@@ -12,7 +12,7 @@ field_name: products_animals
 entity_type: profile
 bundle: common
 label: 'Animal Types / Products'
-description: 'What animals do you have?'
+description: 'What types of animals do you have?'
 required: false
 translatable: false
 default_value: {  }

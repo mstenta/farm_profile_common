@@ -12,7 +12,7 @@ field_name: interest
 entity_type: profile
 bundle: common
 label: 'Interests and Opportunities'
-description: 'What opportunities are you looking for?'
+description: 'What interests you / what opportunities are you looking for?'
 required: false
 translatable: false
 default_value: {  }

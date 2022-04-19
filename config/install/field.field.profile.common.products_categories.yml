@@ -14,7 +14,7 @@ field_name: products_categories
 entity_type: profile
 bundle: common
 label: 'Land Use / Products'
-description: 'How is your land used / what products do you produce from your land?'
+description: 'How is your land used / what products do you produce?'
 required: true
 translatable: false
 default_value: {  }

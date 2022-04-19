@@ -11,7 +11,7 @@ id: profile.common.bio
 field_name: bio
 entity_type: profile
 bundle: common
-label: 'Personal Bio or Mission'
+label: 'Personal Bio or Description'
 description: 'Tell us a little about yourself and/or operation, such as why you farm, what your favorite thing about farming is, or your farming story/connection. (150 words maximum)'
 required: false
 translatable: false

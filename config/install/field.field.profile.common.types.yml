@@ -13,8 +13,8 @@ id: profile.common.types
 field_name: types
 entity_type: profile
 bundle: common
-label: 'Operation Type(s)'
-description: 'What type of operation do you have?'
+label: Type(s)
+description: 'What type(s) of farm operation do you have?'
 required: true
 translatable: false
 default_value: {  }
