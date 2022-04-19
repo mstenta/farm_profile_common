@@ -6,6 +6,9 @@ dependencies:
     - field.storage.profile.land_other_detail
   module:
     - json_field
+  enforced:
+    module:
+      - farm_profile_common
 id: profile.common.land_other_detail
 field_name: land_other_detail
 entity_type: profile

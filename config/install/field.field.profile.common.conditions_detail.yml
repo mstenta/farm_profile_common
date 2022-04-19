@@ -6,6 +6,9 @@ dependencies:
     - field.storage.profile.conditions_detail
   module:
     - json_field
+  enforced:
+    module:
+      - farm_profile_common
 id: profile.common.conditions_detail
 field_name: conditions_detail
 entity_type: profile

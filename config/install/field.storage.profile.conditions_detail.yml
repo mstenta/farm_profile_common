@@ -4,6 +4,9 @@ dependencies:
   module:
     - farm_profile
     - json_field
+  enforced:
+    module:
+      - farm_profile_common
 id: profile.conditions_detail
 field_name: conditions_detail
 entity_type: profile

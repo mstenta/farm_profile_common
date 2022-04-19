@@ -4,6 +4,9 @@ dependencies:
   module:
     - farm_profile
     - geofield
+  enforced:
+    module:
+      - farm_profile_common
 id: profile.area_community
 field_name: area_community
 entity_type: profile
