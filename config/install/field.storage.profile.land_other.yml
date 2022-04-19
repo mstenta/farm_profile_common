@@ -25,6 +25,9 @@ settings:
     -
       value: native_land_title
       label: 'in Native Land Title'
+    -
+      value: none
+      label: 'None of the Above'
   allowed_values_function: ''
 module: options
 locked: false

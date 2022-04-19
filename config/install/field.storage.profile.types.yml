@@ -14,38 +14,35 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: education_farm
-      label: Educational
-    -
-      value: nonprofit_farm
-      label: Non-Profit
-    -
-      value: research_farm
-      label: Research
-    -
-      value: home_garden
-      label: 'Home Garden'
-    -
-      value: pasture
-      label: Pasture
-    -
       value: wholesale_farm
-      label: 'Commercial; Wholesale'
+      label: 'Commercial wholesale'
     -
       value: directsale_farm
-      label: 'Commercial; Direct to Consumer'
+      label: 'Commercial direct to consumer'
     -
-      value: hobby_farm
-      label: 'Hobby or Lifestyle'
+      value: nonprofit_farm
+      label: Non-profit
+    -
+      value: education_farm
+      label: 'Education farm'
+    -
+      value: research_farm
+      label: 'Research or experimental farm'
     -
       value: cooperative_farm
-      label: 'Cooperative/Community Farm'
+      label: 'Cooperative or Community Farm'
     -
-      value: community_garden
-      label: 'Community Garden'
+      value: market_garden
+      label: 'Market garden'
+    -
+      value: home_garden
+      label: 'Home garden/Farmstead'
     -
       value: nursery_farm
       label: 'Nursery Farm'
+    -
+      value: community_garden
+      label: 'Community Garden'
   allowed_values_function: ''
 module: options
 locked: false

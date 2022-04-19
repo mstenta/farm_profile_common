@@ -14,38 +14,50 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: agroforestry
-      label: Agroforestry
-    -
-      value: berries
-      label: Small-fruit/berries
-    -
       value: grains_other
       label: 'Grains and other row crops'
-    -
-      value: native_habitat
-      label: 'Native Habitat'
-    -
-      value: hay_alfalfa
-      label: Hay/Alfalfa
-    -
-      value: orchard_vine
-      label: 'Orchard or Vine'
-    -
-      value: pasture
-      label: Pasture
     -
       value: vegetables
       label: Vegetables
     -
+      value: berries
+      label: 'Small fruit / berries'
+    -
+      value: native_habitat
+      label: 'Native Habitat (low / no management)'
+    -
+      value: hay_alfalfa
+      label: 'Hay / alfalfa'
+    -
+      value: orchard_vine
+      label: 'Orchard and Vine Crops'
+    -
       value: rangeland
       label: Rangeland
+    -
+      value: pasture
+      label: Pasture
     -
       value: dairy
       label: Dairy
     -
+      value: feed_lot
+      label: 'Feed Lots'
+    -
+      value: live_animal_sales_domestic
+      label: 'Live animal sales (domestic)'
+    -
+      value: live_animal_sales_export
+      label: 'Live animal sales (export)'
+    -
+      value: wool
+      label: Wool
+    -
       value: aquaculture
       label: Aquaculture
+    -
+      value: agroforestry
+      label: Agroforestry
   allowed_values_function: ''
 module: options
 locked: false
