@@ -20,7 +20,6 @@
         }
     ],
     "require": {
-        "drupal/address": "^1.9",
         "drupal/json_field": "^1.0@RC",
         "mstenta/farm_profile": "1.x-dev"
     }

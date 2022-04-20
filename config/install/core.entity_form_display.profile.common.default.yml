@@ -38,7 +38,6 @@ dependencies:
     - field.field.profile.common.location_country_code
     - field.field.profile.common.location_locality
     - field.field.profile.common.location_postal_code
-    - field.field.profile.common.mailing_address
     - field.field.profile.common.management_plans_current
     - field.field.profile.common.management_plans_current_detail
     - field.field.profile.common.management_plans_future
@@ -63,7 +62,6 @@ dependencies:
     - field.field.profile.common.units
     - field.field.profile.common.website
   module:
-    - address
     - geofield
     - json_field
   enforced:
@@ -451,12 +449,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  mailing_address:
-    type: address_default
-    weight: 9
-    region: content
-    settings: {  }
     third_party_settings: {  }
   management_plans_current:
     type: options_select
