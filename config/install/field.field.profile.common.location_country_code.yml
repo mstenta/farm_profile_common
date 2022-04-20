@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.location_country_code
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.location_country_code
+field_name: location_country_code
+entity_type: profile
+bundle: common
+label: Country
+description: 'Farm Location: Country'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

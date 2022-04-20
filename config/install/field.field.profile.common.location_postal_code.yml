@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.location_postal_code
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.location_postal_code
+field_name: location_postal_code
+entity_type: profile
+bundle: common
+label: 'Postal Code'
+description: 'Farm Location: Postal Code'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

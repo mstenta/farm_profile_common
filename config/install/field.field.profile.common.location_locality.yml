@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.location_locality
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.location_locality
+field_name: location_locality
+entity_type: profile
+bundle: common
+label: City
+description: 'Farm Location: City'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

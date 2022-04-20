@@ -32,7 +32,12 @@ dependencies:
     - field.field.profile.common.land_other
     - field.field.profile.common.land_other_detail
     - field.field.profile.common.land_type_detail
-    - field.field.profile.common.location
+    - field.field.profile.common.location_address_line1
+    - field.field.profile.common.location_address_line2
+    - field.field.profile.common.location_administrative_area
+    - field.field.profile.common.location_country_code
+    - field.field.profile.common.location_locality
+    - field.field.profile.common.location_postal_code
     - field.field.profile.common.mailing_address
     - field.field.profile.common.management_plans_current
     - field.field.profile.common.management_plans_current_detail
@@ -399,11 +404,53 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  location:
-    type: address_default
-    weight: 33
+  location_address_line1:
+    type: string_textfield
+    weight: 92
     region: content
-    settings: {  }
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  location_address_line2:
+    type: string_textfield
+    weight: 93
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  location_administrative_area:
+    type: string_textfield
+    weight: 89
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  location_country_code:
+    type: string_textfield
+    weight: 88
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  location_locality:
+    type: string_textfield
+    weight: 90
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  location_postal_code:
+    type: string_textfield
+    weight: 91
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   mailing_address:
     type: address_default

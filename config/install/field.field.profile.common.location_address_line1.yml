@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.location_address_line1
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.location_address_line1
+field_name: location_address_line1
+entity_type: profile
+bundle: common
+label: 'Address (line 1)'
+description: 'Farm Location: Address line 1'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

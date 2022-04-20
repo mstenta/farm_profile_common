@@ -2,17 +2,19 @@ langcode: en
 status: true
 dependencies:
   module:
-    - address
     - farm_profile
   enforced:
     module:
       - farm_profile_common
-id: profile.location
-field_name: location
+id: profile.location_address_line1
+field_name: location_address_line1
 entity_type: profile
-type: address
-settings: {  }
-module: address
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

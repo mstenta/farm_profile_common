@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - farm_profile.profile_type.common
+    - field.storage.profile.location_administrative_area
+  enforced:
+    module:
+      - farm_profile_common
+id: profile.common.location_administrative_area
+field_name: location_administrative_area
+entity_type: profile
+bundle: common
+label: 'State / Province'
+description: 'Farm Location: State / Province'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
