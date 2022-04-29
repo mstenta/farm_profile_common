@@ -12,7 +12,7 @@ field_name: role
 entity_type: profile
 bundle: common
 label: Role
-description: 'What role does the person providing this data fill on behalf of the farm operation?'
+description: ' What best describes your role(s) in this farm organization? '
 required: false
 translatable: false
 default_value: {  }
