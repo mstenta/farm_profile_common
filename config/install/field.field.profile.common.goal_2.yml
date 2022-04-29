@@ -14,7 +14,7 @@ field_name: goal_2
 entity_type: profile
 bundle: common
 label: '2nd Most Important Goal'
-description: 'Select the 2nd most important goal in your Farm Operation'
+description: 'Select the 2nd most important monitoring goal in your Farm Operation'
 required: false
 translatable: false
 default_value: {  }
